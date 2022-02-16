@@ -6,11 +6,11 @@
 # Container Security Servers: https://cmsqagpublic.qg3.apps.qualys.com/ContainerSensor
 # API Endpoint: Noted by the documentation - depends on function being used
 
-import qualysapi
+import qualysapi # pip install qualysapi if you don't already have it. 
 
-# This is out API URL for Host Assets
-connect = qualysapi.connect(remember_me=True)
-api_url = "/api/2.0/fo/asset/host/"
+# This is our API URL for Host Assets
+connect = qualysapi.connect(remember_me=True) # remember_me=True is used here so that we don't have to re-enter credentials everytime we run or debug the call. 
+api_url = "/api/2.0/fo/asset/host/" # This is for asset management. This is going to change depending on what module you're working with. Check Qualys API docs for other examples.
 
 ##############################################################################################################
 # Essentially, these are the list of parameters we want to call for when shooting the request over to the API.
