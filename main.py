@@ -31,4 +31,4 @@ params = {
 ##########################################
 
 resp = connect.request(api_url, params)
-print(resp)  # This will output the response, or at least it should.
+print(resp)
